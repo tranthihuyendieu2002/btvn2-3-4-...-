@@ -1,0 +1,2 @@
+- các vòng lặp đều chạy đúng với các số dương
+- số 0 và số âm chỉ đúng với vòng do-while
