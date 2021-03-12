@@ -1,0 +1,2 @@
+- lựa chọn thứ 2
+- đúng toàn bộ test
