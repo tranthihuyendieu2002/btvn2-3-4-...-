@@ -3,7 +3,7 @@ using namespace std;
 
 void xuat(int n, char daymoi[])
 {
-    for (int i = 1; i <= n; i++)
+    for (int i = 0; i < n; i++)
     {
         cout << daymoi[i];
     }
@@ -16,7 +16,7 @@ void thu(int h, int n, int danhdau[], string k, char daymoi[])
         if(danhdau[i] == 0)
         {
             daymoi[h] = k[i]; danhdau[i] = 1;
-            if (h == n) xuat(n, daymoi);
+            if (h == n - 1) xuat(n, daymoi);
             else thu(h + 1, n, danhdau, k, daymoi);
             danhdau[i] = 0;
         }
@@ -29,5 +29,6 @@ int main()
     string k;
     cin >> k;
     int n = k.length();
-    thu(1, n, danhdau, k, daymoi);
+    thu(0, n, danhdau, k, daymoi);
+    return 0;
 }
