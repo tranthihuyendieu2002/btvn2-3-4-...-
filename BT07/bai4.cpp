@@ -9,12 +9,11 @@ void nhapmang(int *happy, int n)
 }
 int main()
 {
-    int *happy = new int [100];
+    int a[100], *happy = a;
     int n, so_can_tim, danh_dau, cong;
     cin >> n;
     nhapmang(happy, n);
     cin >> so_can_tim;
-    //n = n - 1;
     if (n % 2 == 0) danh_dau = n / 2;
     else danh_dau = (n + 1) / 2;
     cong = danh_dau;
@@ -39,4 +38,5 @@ int main()
         }
     }
     cout << danh_dau + 1;
+    return 0;
 }
