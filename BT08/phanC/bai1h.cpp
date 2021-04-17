@@ -14,7 +14,7 @@ int main()
     char *a = new char;
     cin >> a;
     a = trim_right(a);
-    cout << a;;
+    cout << a;
     delete a;
     return 0;
 }
